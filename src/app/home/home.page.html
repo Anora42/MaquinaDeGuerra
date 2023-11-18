@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Hacking Ético</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding >
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>¿Qué es el Hacking Ético?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>El hacking ético, también conocido como testing de penetración o pen-testing, se refiere a la práctica de identificar y resolver vulnerabilidades en sistemas informáticos de manera ética y legal.</p>
+      <p>Consiste en utilizar habilidades y conocimientos técnicos para encontrar y corregir fallos de seguridad en redes, aplicaciones, sistemas y otros entornos informáticos.</p>
+      <p>El objetivo principal del hacking ético es mejorar la seguridad de los sistemas, ayudando a protegerlos contra posibles amenazas y ataques maliciosos.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Generar HMAC</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Mensaje:</ion-label>
+        <ion-input type="text" [(ngModel)]="message"></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="onGenerateHMAC()">Generar HMAC</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>HMAC Generado</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Muestra el HMAC generado -->
+      <p *ngIf="generatedHMAC !== ''">HMAC generado: {{ generatedHMAC }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img (click)="imageClicked()" src="https://w.wallhaven.cc/full/vg/wallhaven-vgedr5.jpg"></ion-img>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Metodología</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Los profesionales de hacking ético siguen una metodología sistemática que incluye las siguientes fases:</p>
+      <ul>
+        <li>Reconocimiento y recopilación de información.</li>
+        <li>Análisis de vulnerabilidades.</li>
+        <li>Explotación de vulnerabilidades.</li>
+        <li>Post-explotación y documentación.</li>
+        <li>Reporte de hallazgos y recomendaciones.</li>
+      </ul>
+      <p>Es importante llevar a cabo estas actividades de manera autorizada y con permiso explícito para evaluar la seguridad de un sistema.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ética y Legalidad</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>El hacking ético se realiza siempre dentro de los límites legales y éticos. Los profesionales de hacking ético deben seguir un código de conducta ética y obtener el consentimiento explícito del propietario del sistema antes de realizar cualquier prueba.</p>
+      <p>Además, el objetivo es mejorar la seguridad sin causar daños ni comprometer la privacidad o integridad de los datos.</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Información Adicional</ion-card-title>
+    </ion-card-header>
+    <ion-card-content #additionalInfo style="display: none;">
+      <p>
+        Orígenes en el MIT: El término "hacker ético" se popularizó a fines de la década de 1970 y principios de la década de 1980 en el Instituto Tecnológico de Massachusetts (MIT), donde los estudiantes exploraban y mejoraban sistemas informáticos y de computadoras.
+
+Conocimiento legal y ético: Los hackers éticos se dedican a mejorar la seguridad de sistemas informáticos, pero lo hacen dentro de límites legales y éticos. Tienen un amplio conocimiento técnico y comprenden las leyes relacionadas con la seguridad informática.
+
+Aprobación y autorización: Antes de realizar pruebas de penetración o identificar vulnerabilidades, los hackers éticos deben obtener el consentimiento explícito del propietario del sistema o la organización para llevar a cabo sus actividades.
+
+Certificaciones de hacking ético: Existen certificaciones reconocidas en la industria, como Certified Ethical Hacker (CEH) y Offensive Security Certified Professional (OSCP), que validan las habilidades y conocimientos de un profesional en este campo.
+
+Métodos de pruebas: Los hackers éticos utilizan métodos como el escaneo de puertos, análisis de vulnerabilidades, pruebas de intrusión y auditorías de seguridad para identificar debilidades en sistemas informáticos.
+
+Importancia en la ciberseguridad: El hacking ético desempeña un papel crucial en la mejora de la ciberseguridad. Al identificar y solucionar vulnerabilidades, contribuye a prevenir ataques cibernéticos y proteger la información sensible.
+
+Enfoque en la ética y la integridad: A diferencia de los hackers maliciosos, los hackers éticos se rigen por un código de ética que prioriza la integridad, la privacidad y la protección de los datos mientras buscan mejorar la seguridad.
+
+Continuo aprendizaje: Dada la rápida evolución de la tecnología y las amenazas cibernéticas, los hackers éticos necesitan mantenerse actualizados constantemente con nuevas técnicas y herramientas para enfrentar los desafíos en curso.
+
+Estos datos muestran cómo el hacking ético no solo implica habilidades técnicas, sino también un fuerte énfasis en la integridad y la legalidad en el campo de la seguridad informática.
+      </p>
+    </ion-card-content>
+    <ion-item>
+      <ion-button expand="block" (click)="toggleAdditionalInfo()">Mostrar/Ocultar Información</ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>

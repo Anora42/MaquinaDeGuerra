@@ -1,0 +1,61 @@
+/* Estilos generales */
+ion-content {
+  --ion-background-color: #f0f0f0; /* Cambia el color de fondo para el contenido */
+  --ion-padding-top: 20px; /* Espaciado superior de la página */
+  --ion-padding-bottom: 20px; /* Espaciado inferior de la página */
+}
+
+ion-card {
+  margin-bottom: 20px;
+  border-radius: 10px; /* Añade bordes redondeados a las tarjetas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra a las tarjetas */
+}
+
+ion-card-title {
+  font-weight: bold;
+  color: #333; /* Cambia el color del título de la tarjeta */
+}
+
+ion-card-content {
+  line-height: 1.6;
+  color: #555; /* Cambia el color del texto en las tarjetas */
+}
+
+ion-card-content p {
+  margin-bottom: 10px;
+}
+
+ion-toolbar {
+  --background: #1976d2; /* Cambia el color de fondo de la barra de herramientas */
+  --color: #fff; /* Cambia el color del texto en la barra de herramientas */
+}
+
+/* Estilos para las imágenes */
+ion-img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px; /* Añade bordes redondeados a las imágenes */
+  transition: transform 0.3s ease-in-out; /* Agrega transición al hacer hover */
+}
+
+ion-img:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen al hacer hover */
+}
+
+/* Estilos para los botones */
+ion-button {
+  margin-top: 10px;
+  --background: #1976d2; /* Cambia el color de fondo del botón */
+  --color: #fff; /* Cambia el color del texto del botón */
+  --border-radius: 20px; /* Añade bordes redondeados al botón */
+}
+
+ion-button:hover {
+  --background: #1565c0; /* Cambia el color de fondo del botón al hacer hover */
+}
+
+/* Estilos para la información adicional */
+ion-card-content[style='display: none;'] {
+  display: none;
+}

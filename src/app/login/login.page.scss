@@ -1,0 +1,296 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+  .ojo{
+    margin: auto;
+  }
+  
+  ion-list{
+    background-color: #F5F6F7;
+  }
+    
+    ion-item {
+      border-radius: 10px;
+      height: 55px;
+      width: 350px;
+      box-shadow: 1px 8px 0px #00000014;
+      --highlinght-heigh:0px;
+      margin-bottom: 10px;
+      color: #000000;
+      border: 2px solid #000000;
+    }
+  
+    ion-input{
+      font-size: 18px;
+      --padding-top: 20px;
+      --padding-bottom:15px;
+      --padding-start:15px;
+    }
+    .ion-padding{
+      justify-content: center;
+    }
+  
+    h1,a{
+      color: #000000;
+      font-family: "Anton", sans-serif;
+  }
+
+  
+  h2{
+    text-align: center;
+    
+  }
+ 
+  
+  .Guardar{
+  border-radius: 50%;
+  }
+  
+  ion-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #F5F6F7F8;
+    border-radius: 10%;
+    height: 500px;
+  }
+  .Volver{
+    justify-content: center;
+    text-align: center;
+  }
+  .ion-padding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+  
+  //Pantallas medianas (tablets de menos de 992px)
+  @media (max-width: 991.98px) { 
+    
+    ion-card{
+      width: 300px;
+    }
+  
+    ion-item{
+      width: 250px;
+    }
+  
+    ion-card button{
+      width: 100%;
+    }
+  
+    .Milk1{
+      width: 250px;
+      height: 300px;
+    }
+    .Milk2{
+      width: 200px;
+      height: 200px;
+    }
+    .Milk3{
+      margin-top: -10px;
+      margin-right: -10px;
+      width: 200px;
+      height: 200px;
+    }
+    .Pulparindo{
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: 75.4%;
+    }
+    .Pulparindos{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 80.1%;
+      margin-left: -20px;
+    }
+    .Gomitas{ 
+      width: 200px;
+      height: 230px;
+    }
+    .Gomitas2{
+      margin-top: -60px;
+      width: 150px;
+      height: 200px;
+    }
+    .Skis{
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: 75.2%;
+    }
+   }
+  
+   @media (max-width: 913px) {
+    .Skis{
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: 81.7%;
+    }
+    .Pulparindo{
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: 81.6%;
+    }
+    .Pulparindos{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 85.1%;
+      margin-left: -20px;
+    }
+    .Gomitas2{
+      margin-top: -170px;
+    }
+    .Gomitas{
+      margin-top: -40px;
+    }
+   }
+  
+   @media (max-width: 821px) {
+    .Skis{
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: 78.7%;
+    }
+    .Pulparindo{
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: 78.6%;
+    }
+    .Pulparindos{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 83.1%;
+      margin-left: -20px;
+    }
+    .Gomitas2{
+      margin-top: -120px;
+    }
+    .Gomitas{
+      margin-top: -40px;
+    }
+   }
+  
+  //Pantallas pequeñas (móviles en landscape de menos de 768px)
+  @media (max-width: 767.98px) { 
+    .Milk1{
+      width: 150px;
+      height: 200px;
+    }
+    .Milk2{
+      width: 150px;
+      height: 150px;
+    }
+    .Milk3{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 270px;
+    }
+    .Pulparindo{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 73.6%;
+    }
+    .Pulparindos{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 80%;
+    }
+    .Gomitas{ 
+      width: 130px;
+      height: 230px;
+    }
+    .Gomitas2{
+      width: 130px;
+      height: 150px;
+    }
+    .Skis{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 73.6%;
+    }
+   }
+  
+  
+   @media (max-width: 600px) {
+    
+    ion-card{
+      width: 250px;
+    }
+  
+    ion-item{
+      width: 200px;
+    }
+  
+    ion-card button{
+      width: 100%;
+    }
+  
+    .Milk1{
+      width: 100px;
+      height: 150px;
+      margin-top: 50px;
+    }
+    .Milk2{
+      width: 100px;
+      height: 100px;
+      margin-top: 30px;
+    }
+    .Milk3{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 260px;
+    }
+    .Pulparindo{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 83.45%;
+    }
+    .Pulparindos{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 88.2%;
+    }
+    .Gomitas{ 
+      width: 100px;
+      height: 180px;
+      margin-top: 30px;
+    }
+    .Gomitas2{
+      width: 80px;
+      height: 100px;
+      margin-top: -20px;
+    }
+    .Skis{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top:83.15%;
+  }
+  }
